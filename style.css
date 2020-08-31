@@ -1,0 +1,68 @@
+body {
+    margin: 0%;
+}
+/*===================================================*/
+/*===================================================*/
+/*                      HEADER                       */
+/*===================================================*/
+/*===================================================*/
+.navbar {
+    padding: 0%!important;
+}
+.navbar-brand {
+    margin-left: 5px;
+}
+.navbar-collapse {
+    margin-left: 3%;
+}
+.nav-item {
+    padding: 15px!important;
+    text-align: center;
+}
+.nav-link {
+    color: black;
+}
+@media (min-width: 100px) and (max-width: 991px){
+    .nav-item {
+        text-align: left;
+    }
+    .nav-link {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    #img-logo { display: none; }
+    #name-logo { 
+        display: block; 
+        padding: 25px;
+        font-weight: bold;
+        font-size: 22px;
+    }
+    .light-logo {
+        color: orangered;
+        font-weight: normal;
+    }
+    .navbar-toggler {
+        margin-right: 5%;
+    }
+}
+@media (min-width: 992px) and (max-width: 2000px){
+    .nav-link {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    #name-logo {
+        display: none;
+    }
+    .navbar-brand {
+        margin-left: 25px!important;
+    }
+}
+/*===================================================*/
+/*===================================================*/
+/*                       MAIN                        */
+/*===================================================*/
+/*===================================================*/
+main {
+    height: 900px;
+    background-color: rgb(54, 54, 54);
+}
