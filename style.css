@@ -1,13 +1,13 @@
 body {
     margin: 0%;
+    padding: 0%;
 }
-/*===================================================*/
 /*===================================================*/
 /*                      HEADER                       */
 /*===================================================*/
-/*===================================================*/
 .navbar {
     padding: 0%!important;
+    background-color: rgb(92, 92, 92);
 }
 .navbar-brand {
     margin-left: 5px;
@@ -20,7 +20,7 @@ body {
     text-align: center;
 }
 .nav-link {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 @media (min-width: 100px) and (max-width: 991px){
     .nav-item {
@@ -30,7 +30,7 @@ body {
         font-size: 14px;
         font-weight: 500;
     }
-    #img-logo { display: none; }
+    .img-logo { display: none; }
     #name-logo { 
         display: block; 
         padding: 25px;
@@ -50,6 +50,10 @@ body {
         font-size: 16px;
         font-weight: 500;
     }
+    .img-logo {
+        height: auto;
+        width: 160.5px;
+    }
     #name-logo {
         display: none;
     }
@@ -58,11 +62,36 @@ body {
     }
 }
 /*===================================================*/
-/*===================================================*/
 /*                       MAIN                        */
 /*===================================================*/
-/*===================================================*/
 main {
-    height: 900px;
+    height: 700px;
     background-color: rgb(54, 54, 54);
+    margin-bottom: 5%;
 }
+/*===================================================*/
+/*                     FOOTER                        */
+/*===================================================*/
+.footbar {
+    height:  130px;
+    width: 100%;
+    background-color: rgb(92, 92, 92);
+}
+
+.footbar-boxs {
+    height: 130px;
+    width: 33.3%;
+    float: left;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
