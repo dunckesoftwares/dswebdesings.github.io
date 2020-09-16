@@ -7,10 +7,16 @@ body {
 /*===================================================*/
 .navbar {
     padding: 0%!important;
-    background-color: rgb(92, 92, 92);
+    width: 100%!important;
+    background-color: rgb(33, 33, 33, 0.5);
+    position: absolute!important;
+    top: 0%;
+    z-index: 10!important;
 }
 .navbar-brand {
     margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .navbar-collapse {
     margin-left: 3%;
@@ -20,7 +26,22 @@ body {
     text-align: center;
 }
 .nav-link {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255)!important;
+}
+.nav-link:hover {
+    color: rgb(247, 96, 42)!important;
+}
+.nav-link:hover:after {
+    right: 0;
+}
+.nav-link::after {
+    border-top: 2px solid white;
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: -2px;
+    left: 0;
+    transition: right 1s cubic-bezier(1.0, 0.7, 0.3, 0.0);
 }
 @media (min-width: 100px) and (max-width: 991px){
     .nav-item {
@@ -32,14 +53,12 @@ body {
     }
     .img-logo { display: none; }
     #name-logo { 
-        display: block; 
-        padding: 25px;
-        font-weight: bold;
-        font-size: 22px;
+        display: block;
+        padding: 10px;
     }
-    .light-logo {
-        color: orangered;
-        font-weight: normal;
+    .img-logo-DS {
+        height: auto;
+        width: 150px;
     }
     .navbar-toggler {
         margin-right: 5%;
@@ -49,10 +68,12 @@ body {
     .nav-link {
         font-size: 16px;
         font-weight: 500;
+        position: relative;
+        text-decoration: none;
     }
     .img-logo {
         height: auto;
-        width: 160.5px;
+        width: 180px;
     }
     #name-logo {
         display: none;
@@ -65,27 +86,34 @@ body {
 /*                       MAIN                        */
 /*===================================================*/
 main {
-    height: 700px;
-    background-color: rgb(54, 54, 54);
+    height: auto ;
     margin-bottom: 5%;
+}
+/*====================*/
+/*==     CAROUSEL   ==*/
+/*====================*/
+#carousel-DS-dats {
+    position: relative;
+    height: 100%!important;
+    width: 100%!important;
+}
+.owl-slide {
+    position: relative;
+    height: 100vh;
+}
+.cover {
+    margin: 0%;
+    padding: 0%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: auto;
+    left: 50%;
+    transform: translate(-50%);
 }
 /*===================================================*/
 /*                     FOOTER                        */
 /*===================================================*/
-.footbar {
-    height:  130px;
-    width: 100%;
-    background-color: rgb(92, 92, 92);
-}
-
-.footbar-boxs {
-    height: 130px;
-    width: 33.3%;
-    float: left;
-    text-align: center;
-    color: white;
-}
-
 
 
 
